@@ -36,3 +36,9 @@ $ vargrant ssh
 ```
 $ k3d cluster create demo --servers 1 --agents 2
 ```
+
+- Check your cluster nodes:
+
+```
+$ kubectl get nodes
+```
