@@ -1,4 +1,4 @@
-# Debian K3d Demo
+# Vagrant K3d
 
 Simple debian virtual machine to run k3d locally.
 
@@ -15,7 +15,7 @@ Note, this installs the latest `k3d`, `kubectl`, `helm`, `k9s`, `kubectx`, `skaf
 - Clone the repo:
 
 ```
-$ git clone https://github.com/sdaoudi/debian-k3d-demo.git
+$ git clone https://github.com/sdaoudi/vagrant-k3d.git
 ```
 
 - Start Vagrant
