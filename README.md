@@ -21,7 +21,7 @@ $ git clone https://github.com/sdaoudi/vagrant-k3d.git
 - Start Vagrant
 
 ```
-$ cd debian-k3d-demo
+$ cd vagrant-k3d
 $ vagrant up
 ```
 
