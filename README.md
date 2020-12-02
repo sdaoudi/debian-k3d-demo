@@ -2,15 +2,15 @@
 
 Simple debian virtual machine to run k3d locally.
 
-Note, this installs the latest `k3d`, `kubectl`, `helm`, `k9s`, `kubectx`, `skaffold` and `kustomize` packages.
+**Note:** this installs the latest `k3d`, `kubectl`, `helm`, `k9s`, `kubectx`, `skaffold` and `kustomize` packages.
 
-# Requirements
+## Requirements
 
  - [Download](https://git-scm.com/downloads) and install GIT
  - [Download](https://www.virtualbox.org/wiki/Downloads) and install Virtualbox
  - [Download](https://www.vagrantup.com/downloads.html) and install Vagrant
 
-# Startup
+## Startup
 
 - Clone the repo:
 
