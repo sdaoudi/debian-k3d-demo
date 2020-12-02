@@ -38,12 +38,12 @@ Vagrant.configure("2") do |config|
     # install helm
     curl https://baltocdn.com/helm/signing.asc | sudo apt-key add -
     echo "deb https://baltocdn.com/helm/stable/debian/ all main" | tee /etc/apt/sources.list.d/helm-stable-debian.list
-	apt-get update
-	apt-get install -y helm
+    apt-get update
+    apt-get install -y helm
 
-	# install k9s
-	curl -LO https://github.com/derailed/k9s/releases/download/v0.24.1/k9s_Linux_x86_64.tar.gz
-	tar -zxvf k9s_Linux_x86_64.tar.gz
+    # install k9s
+    curl -LO https://github.com/derailed/k9s/releases/download/v0.24.1/k9s_Linux_x86_64.tar.gz
+    tar -zxvf k9s_Linux_x86_64.tar.gz
     chmod +x ./k9s
     mv ./k9s /usr/local/bin/k9s
     rm k9s_Linux_x86_64.tar.gz LICENSE README.md
@@ -53,8 +53,11 @@ Vagrant.configure("2") do |config|
 
     # install skaffold
     curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64 && \
-	install skaffold /usr/local/bin/ && \
-	rm skaffold
+	  install skaffold /usr/local/bin/ && \
+    rm skaffold
+
+    # install Kustomize
+    curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
   SHELL
 
   # vagrant ansible provisioner seems not working
