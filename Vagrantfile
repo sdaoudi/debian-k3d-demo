@@ -58,6 +58,8 @@ Vagrant.configure("2") do |config|
 
     # install Kustomize
     curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
+    chmod +x ./kustomize
+    mv ./kustomize /usr/local/bin/kustomize
   SHELL
 
   # vagrant ansible provisioner seems not working
