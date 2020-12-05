@@ -60,6 +60,11 @@ Vagrant.configure("2") do |config|
     curl -s "https://raw.githubusercontent.com/kubernetes-sigs/kustomize/master/hack/install_kustomize.sh"  | bash
     chmod +x ./kustomize
     mv ./kustomize /usr/local/bin/kustomize
+
+    # install devspace
+    curl -s -L "https://github.com/devspace-cloud/devspace/releases/download/v5.4.1/devspace-linux-amd64" -o devspace
+    install devspace /usr/local/bin
+    rm devspace
   SHELL
 
   # vagrant ansible provisioner seems not working
