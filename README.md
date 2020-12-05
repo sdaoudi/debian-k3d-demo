@@ -2,7 +2,7 @@
 
 Simple debian virtual machine to run k3d locally.
 
-**Note:** this installs the latest `k3d`, `kubectl`, `helm`, `k9s`, `kubectx`, `skaffold`, `kustomize` and `devspace packages.
+**Note:** this installs the latest `k3d`, `kubectl`, `helm`, `k9s`, `kubectx`, `skaffold`, `kustomize` and `devspace` packages.
 
 ## Requirements
 
